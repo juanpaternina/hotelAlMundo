@@ -41,11 +41,17 @@ export default class Main extends React.Component {
 					</View>
 				) : (
 					<View style={{ flex: 1 }}>
-						<FlatList
-							testID="hotelList"
-							data={this.props.hotels}
-							renderItem={item => <Hotel data={item} onPress={() => this.props.showHotelDeatil(item)} />}
-						/>
+						{this.props.hotels.length > 0 ? (
+							<FlatList
+								testID="hotelList"
+								data={this.props.hotels}
+								renderItem={item => <Hotel data={item} onPress={() => this.props.showHotelDeatil(item)} />}
+							/>
+						) : (
+							<Text style={{ textAlign: 'center', justifyContent: 'center' }}>
+								No existen resultados para tu busqueda, intenta con otro termino
+							</Text>
+						)}
 					</View>
 				)}
 			</View>
