@@ -6,6 +6,9 @@ El backend fue realizado en Express con Arquitectura MVC usando algunas depedenc
 
 El Front es una app desarrollada en react native,  la aplicación fue desarrollada usando Expo que es un framework de desarrollo de React Native, el patrón de redux, para la navegación se uso react-navigation.
 
+# Resultado
+
+![](test.gif)
 
 # Instrucciones
 
